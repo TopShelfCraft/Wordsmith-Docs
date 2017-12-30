@@ -25,7 +25,7 @@ title: Wordsmith Documentation
 	</ul>
 
 	<p class="buttons">
-		<a href="https://topshelfcraft.com/wordsmith" class="button">Get Wordsmith</a>
+		<a href="/guide/installation.html" class="button">Get Wordsmith</a>
 	</p>
 
 	<ul id="social">
