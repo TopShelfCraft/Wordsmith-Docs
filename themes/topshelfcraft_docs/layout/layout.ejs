@@ -1,0 +1,63 @@
+<% var isIndex = page.path === 'index.html' %>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <% if (isIndex) { %>
+        <title><%- page.title %></title>
+        <% } else { %>
+        <title><%- page.title ? page.title + ' - ' : '' %><%- site.data.tsc.product_name %> Documentation</title>
+        <% } %>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Documentation for the Wordsmith #CraftCMS plugin by Top Shelf Craft">
+        <meta name="referrer" content="always" />
+        <meta name="keywords" content="Craft, CMS, Craft CMS, CraftCMS, Wordsmith, Top Shelf, Documentation, Docs, Help" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel='stylesheet' type='text/css'>
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+
+        <script>
+            window.PAGE_TYPE = "<%- page.type %>"
+        </script>
+
+        <%- css(isIndex ? 'css/index' : 'css/page') %>
+
+        <%- partial('partials/ga') %>
+
+    </head>
+
+    <body>
+
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+
+        <% if (!isIndex) { %>
+
+            <%- partial('partials/header') %>
+            <div id="main">
+
+                <%- body %>
+
+            </div>
+            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+
+        <% } else { %>
+
+            <%- page.content %>
+
+        <% } %>
+
+    </body>
+
+</html>
