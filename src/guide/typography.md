@@ -8,12 +8,17 @@ order: 20
 
 Wordsmith's typography methods include:
 
+- [`amp`](#amp)
+- [`caps`](#caps)
 - [`typogrify`](#typogrify)
+- [`typogrifyFeed`](#typogrifyFeed)
+- [`smartypants`](#smartypants)
+- [`widont`](#widont)
+- [`wrapAmps`](#wrapAmps)
+- [`wrapCaps`](#wrapCaps)
 
 
-## Typogrify
-
-
+## Typography
 
 
 ### `amp`
