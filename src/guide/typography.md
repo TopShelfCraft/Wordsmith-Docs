@@ -61,14 +61,14 @@ Typogrify applies a veritable kitchen sink of typographic treatments to beautify
 * `settings` &mdash; An array of ad-hoc settings to override the defaults for this instance of the filter.
   
 ```twig
-{% filter typogrify
+{% filter typogrify %}
     On the 1st day of Christmas my "true love" gave to me:
     1/2 of a Patridge(TM) in a pear tree.
 {% endfilter %}
 ```
 
 ```twig
-{{ 'Mark & Sons: "industry leaders" in... stuff.' | typogrify
+{{ 'Mark & Sons: "industry leaders" in... stuff.' | typogrify }}
 ```
 
 ### `typogrifyFeed`
