@@ -27,7 +27,7 @@ order: 40
 Intelligently up-cases a string as a headline/title using AP capitalization rules.
 
 ```twig
-{{ 'a tale of two cities' | camelize }}
+{{ 'a tale of two cities' | apTitleize }}
 
 #  "A Tale of Two Cities"
 ```
