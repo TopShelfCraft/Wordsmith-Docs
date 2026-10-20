@@ -71,7 +71,7 @@ _For purposes of semantic versioning, the **names** of parameters are guaranteed
  - [`automatedReadabilityIndex`](/guide/statistics.html#automatedReadabilityIndex)
  - [`averageWordsPerSentence`](/guide/statistics.html#averageWordsPerSentence)
  - [`between`](/guide/substrings.html#between)
- - [`camelize`](/guide/casing.html#camelize)
+ - [`apTitleize`](/guide/casing.html#apTitleize)
  - [`caps`](/guide/typography.html#caps)
  - [`chop`](/guide/truncation.html#chop)
  - [`colemanLiauIndex`](/guide/statistics.html#colemanLiauIndex)
