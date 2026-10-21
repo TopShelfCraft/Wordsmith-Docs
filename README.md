@@ -15,3 +15,12 @@ $ npm install -g hexo-cli
 $ npm install
 $ hexo server
 ```
+
+## Deployment
+
+The site is built locally and deployed to Cloudflare Workers:
+
+```
+npx hexo generate
+npx wrangler deploy
+```
